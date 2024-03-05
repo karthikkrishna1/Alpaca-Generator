@@ -11,7 +11,7 @@ const Subnav = ({ options, setOption, activeOption }: Props) => {
   return (
     <div>
       <h2>Style</h2>
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap gap-3">
         {options.map((option: string) => {
           console.log(option === activeOption ? option : "false");
 

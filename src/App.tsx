@@ -73,11 +73,11 @@ function App() {
   };
 
   return (
-    <main className="flex flex-col">
+    <main className="flex flex-col space-y-4 w-10/12 items-center ml-20 mr-0">
       <Heading />
-      <div className="flex flex-row space-x-4">
+      <div className="flex flex-row space-x-20 shrink-0">
         <Avatar avatarState={AvatarState} />
-        <div className="flex flex-col">
+        <div className="flex flex-col items-center gap-4">
           <Nav activeNav={activeNav} setActiveNav={setActiveNav} />
           <Subnav
             options={totalOptions[activeNav]}
